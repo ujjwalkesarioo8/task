@@ -1,0 +1,24 @@
+1) set up environment
+
+for apache 
+sudo apt install apache2 -y
+
+for mysql 
+sudo apt install mysql-server-y
+
+for php 
+sudo apt install php php-mysqli libapache2-mod 
+
+
+
+for setting up new user in database
+
+create user 'task'@'localhost' identified with caching_sha2_password by 'pass';
+
+for granting privilages
+
+grant all privileges on *.* to 'task'@'localhost';
+
+
+
+
